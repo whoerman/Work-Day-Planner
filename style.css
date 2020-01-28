@@ -1,7 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-  }
+}
+
+.jumbotron {
+    background-color: #ffffff;
+    border-color: #000000;
+
+}
 
 .display-3 {
     font-family: 'Open Sans', sans-serif;
@@ -13,3 +19,23 @@ body {
     color: #000000;
     font-size: 1.5rem;
 }
+
+hr {
+    size="30";
+    color: #000000;
+}
+
+#timeBlock {
+    background-color: coral;
+    font-size: 1.2rem;
+    height: 100%;
+}
+
+#agendaBlock {
+    background-color: cornflowerblue;
+}
+
+#commandBlock {
+    background-color: darkblue;
+}
+
