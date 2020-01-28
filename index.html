@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <header class="jumbotron border-0">
+    <header class="jumbotron-fluid">
         <h1 class="display-3 text-center">Work Day Scheduler</h1>
         <p class="lead text-center">A simple calendar app for scheduling your work day</p>
         <p id="currentDay" class="lead text-center"></p>
@@ -32,113 +32,121 @@
     <div class="container">
         <!--9AM Button-->
         <div class="row justify-content-md-center">
-            <div id="timeBlock" class="col-sm-1 align-self-center text-center">
-                9 AM:
-            </div>
-            <div id="agendaBlock9" data-time="9" class="col-sm-8">
+            <button type="button" class="btn btn-info mb-1" id="9AM">9 AM</button>
+            <div id="agendaBlock9" data-time="9" class="border-dark mb-1 col-xs-4 col-sm-6 col-md-8">
                 <form>
                     <textarea class="form-control" id="slot9in" rows="3"></textarea>
             </div>
             </form>
-            <button type="button" class="btn btn-primary" id="btn9">Save</button>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary" id="btn9">Save</button>
+                <button type="button" class="btn btn-warning mb-1" id="btn9e">Erase</button>
+            </div>
         </div>
         <!--10AM Button-->
         <div class="row justify-content-md-center">
-            <div id="timeBlock" class="col-sm-1 align-self-center text-center">
-                10 AM:
-            </div>
-            <div id="agendaBlock10" data-time="10" class="col-sm-8">
+            <button type="button" class="btn btn-info mb-1" id="10AM">10 AM</button>
+            <div id="agendaBlock10" data-time="10" class="border-dark mb-1 col-xs-4 col-sm-6 col-md-8">
                 <form>
                     <textarea class="form-control" id="slot10in" rows="3"></textarea>
             </div>
             </form>
-            <button type="button" class="btn btn-primary" id="btn10">Save</button>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary" id="btn10">Save</button>
+                <button type="button" class="btn btn-warning mb-1" id="btn10e">Erase</button>
+            </div>
         </div>
         <!--11AM Button-->
         <div class="row justify-content-md-center">
-            <div id="timeBlock" class="col-sm-1 align-self-center text-center">
-                11 AM:
-            </div>
-            <div id="agendaBlock11" data-time="11" class="col-sm-8">
+            <button type="button" class="btn btn-info mb-1" id="11AM">11 AM</button>
+            <div id="agendaBlock10" data-time="11" class="border-dark mb-1 col-xs-4 col-sm-6 col-md-8">
                 <form>
                     <textarea class="form-control" id="slot11in" rows="3"></textarea>
             </div>
             </form>
-            <button type="button" class="btn btn-primary" id="btn11">Save</button>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary" id="btn11">Save</button>
+                <button type="button" class="btn btn-warning mb-1" id="btn11e">Erase</button>
+            </div>
         </div>
         <!--12Noon Button-->
         <div class="row justify-content-md-center">
-            <div id="timeBlock" class="col-sm-1 align-self-center text-center">
-                12 Noon:
-            </div>
-            <div id="agendaBlock12" data-time="12" class="col-sm-8">
+            <button type="button" class="btn btn-info mb-1" id="12Noon">12 Noon</button>
+            <div id="agendaBlock12" data-time="12" class="border-dark mb-1 col-xs-4 col-sm-6 col-md-8">
                 <form>
                     <textarea class="form-control" id="slot12in" rows="3"></textarea>
             </div>
             </form>
-            <button type="button" class="btn btn-primary" id="btn12">Save</button>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary" id="btn12">Save</button>
+                <button type="button" class="btn btn-warning mb-1" id="btn12e">Erase</button>
+            </div>
         </div>
         <!--1PM Button-->
         <div class="row justify-content-md-center">
-            <div id="timeBlock" class="col-sm-1 align-self-center text-center">
-                1 PM:
-            </div>
-            <div id="agendaBlock13" data-time="13" class="col-sm-8">
+            <button type="button" class="btn btn-info mb-1" id="1PM">1 PM</button>
+            <div id="agendaBlock13" data-time="13" class="border-dark mb-1 col-xs-4 col-sm-6 col-md-8">
                 <form>
                     <textarea class="form-control" id="slot13in" rows="3"></textarea>
             </div>
             </form>
-            <button type="button" class="btn btn-primary" id="btn13">Save</button>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary" id="btn13">Save</button>
+                <button type="button" class="btn btn-warning mb-1" id="btn13e">Erase</button>
+            </div>
         </div>
         <!--2PM Button-->
         <div class="row justify-content-md-center">
-            <div id="timeBlock" class="col-sm-1 align-self-center text-center">
-                2 PM:
-            </div>
-            <div id="agendaBlock14" data-time="14" class="col-sm-8">
+            <button type="button" class="btn btn-info mb-1" id="2PM">2 PM</button>
+            <div id="agendaBlock14" data-time="14" class="border-dark mb-1 col-xs-4 col-sm-6 col-md-8">
                 <form>
                     <textarea class="form-control" id="slot14in" rows="3"></textarea>
             </div>
             </form>
-            <button type="button" class="btn btn-primary" id="btn14">Save</button>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary" id="btn14">Save</button>
+                <button type="button" class="btn btn-warning mb-1" id="btn14e">Erase</button>
+            </div>
         </div>
         <!--3PM Button-->
         <div class="row justify-content-md-center">
-            <div id="timeBlock" class="col-sm-1 align-self-center text-center">
-                3 PM:
-            </div>
-            <div id="agendaBlock15" data-time="15" class="col-sm-8">
+            <button type="button" class="btn btn-info mb-1" id="3PM">3 PM</button>
+            <div id="agendaBlock15" data-time="15" class="border-dark mb-1 col-xs-4 col-sm-6 col-md-8">
                 <form>
                     <textarea class="form-control" id="slot15in" rows="3"></textarea>
             </div>
             </form>
-            <button type="button" class="btn btn-primary" id="btn15">Save</button>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary" id="btn15">Save</button>
+                <button type="button" class="btn btn-warning mb-1" id="btn15e">Erase</button>
+            </div>
         </div>
         <!--4PM Button-->
         <div class="row justify-content-md-center">
-            <div id="timeBlock" class="col-sm-1 align-self-center text-center">
-                4 PM:
-            </div>
-            <div id="agendaBlock16" data-time="16" class="col-sm-8">
+            <button type="button" class="btn btn-info mb-1" id="4PM">4 PM</button>
+            <div id="agendaBlock16" data-time="16" class="border-dark mb-1 col-xs-4 col-sm-6 col-md-8">
                 <form>
                     <textarea class="form-control" id="slot16in" rows="3"></textarea>
             </div>
             </form>
-            <button type="button" class="btn btn-primary" id="btn16">Save</button>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary" id="btn16">Save</button>
+                <button type="button" class="btn btn-warning mb-1" id="btn16e">Erase</button>
+            </div>
         </div>
         <!--5PM Button-->
         <div class="row justify-content-md-center">
-            <div id="timeBlock" class="col-sm-1 align-self-center text-center">
-                5 PM:
-            </div>
-            <div id="agendaBlock17" data-time="17" class="col-sm-8">
+            <button type="button" class="btn btn-info mb-1" id="5PM">5 PM</button>
+            <div id="agendaBlock17" data-time="17" class="border-dark mb-1 col-xs-4 col-sm-6 col-md-8">
                 <form>
                     <textarea class="form-control" id="slot17in" rows="3"></textarea>
             </div>
             </form>
-            <button type="button" class="btn btn-primary" id="btn17">Save</button>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary" id="btn17">Save</button>
+                <button type="button" class="btn btn-warning mb-1" id="btn17e">Erase</button>
+            </div>
         </div>
-    </div>
     </div>
 
     <!-- link to jQuery and Moment.js-->

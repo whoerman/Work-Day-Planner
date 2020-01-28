@@ -1,10 +1,9 @@
 body {
-    margin: 0;
-    padding: 0;
+    background-color: #FFFFee;
 }
 
 .jumbotron {
-    background-color: #ffffff;
+    background-color: #ffffee;
     border-color: #000000;
 
 }
@@ -39,3 +38,6 @@ hr {
     background-color: darkblue;
 }
 
+textarea {
+    font-size: 1.2rem;
+}
