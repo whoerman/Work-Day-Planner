@@ -2,14 +2,6 @@
 let dateToday = moment().format('LL');
 $("#currentDay").text(dateToday);
 
-//putting the date on the page
-let dateTomorrow = moment().add(1, 'days').format('LL');
-$("#nextDay").text(dateTomorrow);
-
-//putting the date on the page
-let dateYesterday = moment().subtract(1, 'days').format('LL');
-$("#previousDay").text(dateYesterday);
-
 //setting targets for slots
 let $appt9 = $("#slot9in");
 let $appt10 = $("#slot10in");
