@@ -120,7 +120,7 @@ switch (currentHour) {
 
 //checking the local storage for info
 function getStorage() {
-    var backTransfer = JSON.parse(localStorage.getItem('calendarObj'));
+    var backTransfer = JSON.parse(window.localStorage.getItem('calendarObj'));
     calendarObj = backTransfer;
     $appt9.text(calendarObj.slot9);
     $appt10.text(calendarObj.slot10);
@@ -263,7 +263,7 @@ $(document).ready(function () {
     });
 
     function pushStorage() {
-        localStorage.setItem('calendarObj', JSON.stringify(calendarObj));
+        window.localStorage.setItem('calendarObj', JSON.stringify(calendarObj));
     }
 
     function refreshAppointments() {
