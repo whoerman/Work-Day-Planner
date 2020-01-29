@@ -1,8 +1,8 @@
+![alt text](./assets/screenshottitle.jpg "Work Day Planner Header")
+
 # Work Day Planner
 
 A simple template for a day planner, with the ability to save inputs to local storage. 
-
-![alt text](./assets/screenshottitle.jpg "Work Day Planner Header")
 
 ## Premise
 
@@ -54,6 +54,6 @@ The text will be saved to local storage by clicking the Save button. The Erase b
 If no buttons are pushed, the data will disappear upon refreshing the program. Each textarea has a specific set of buttons, and the data is only saved for the corresponding textarea.
 ```
 ```
-### Use Explanation
+### Acknowledgements
 
 Written by walter Hoerman as part of the coursework for the UNH Full Stack Web Development Bootcamp.
