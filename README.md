@@ -42,9 +42,8 @@ When opened, the schedule blocks will be empty, unless previous has been stored 
 
 Today's date will be automatically applied to top.
 
-```
 When the page is loaded, the textareas are color coded depending on the time. Past events are gray, Current time even is red, and future events are green. The color coding will refresh if the page is reloaded.
-```
+
 By clicking on a time block, text can be written by the user.
 ```
 ```
@@ -52,7 +51,6 @@ By clicking on a time block, text can be written by the user.
 
 The text will be saved to local storage by clicking the Save button. The Erase button will remove the text from the textarea and also remove it from local storage.
 
-```
 If no buttons are pushed, the data will disappear upon refreshing the program. Each textarea has a specific set of buttons, and the data is only saved for the corresponding textarea.
 ```
 ```
