@@ -3,6 +3,7 @@ let dateToday = moment().format('LL');
 $("#currentDay").text(dateToday);
 
 //setting targets for slots
+
 let $appt9 = $("#slot9in");
 let $appt10 = $("#slot10in");
 let $appt11 = $("#slot11in");
@@ -16,6 +17,9 @@ let $appt17 = $("#slot17in");
 
 //getting the current hour for shading
 let currentHour = parseInt(moment().format('H'));
+
+
+
 switch (currentHour) {
     case 9:
         $appt9.css("background-color", "#ff2626");
@@ -120,8 +124,10 @@ switch (currentHour) {
 
 //checking the local storage for info
 function getStorage() {
-    var backTransfer = JSON.parse(window.localStorage.getItem('calendarObj'));
-    calendarObj = backTransfer;
+    if (localStorage.getItem("calendarObj") !== null) {
+        calendarObj = JSON.parse(window.localStorage.getItem('calendarObj'));
+    }
+
     $appt9.text(calendarObj.slot9);
     $appt10.text(calendarObj.slot10);
     $appt11.text(calendarObj.slot11);
@@ -135,6 +141,13 @@ function getStorage() {
 
 getStorage();
 
+calendarKeys = Object.keys(calendarObj);
+calendarKeys.forEach( function(key, index) {
+    console.log(index);
+    console.log(key);
+    console.log(calendarObj[key]);
+
+});
 
 
 //setting buttons to listen
