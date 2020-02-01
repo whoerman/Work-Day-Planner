@@ -171,7 +171,6 @@ $(document).ready(function () {
     });
 
     $("#btn9e").on("click", function () {
-        eraseAnimation();
         calendarObj.slot9 = "";
         pushStorage();
         refreshAppointments();
@@ -185,7 +184,6 @@ $(document).ready(function () {
     });
 
     $("#btn10e").on("click", function () {
-        eraseAnimation();
         calendarObj.slot10 = "";
         pushStorage();
         refreshAppointments();
@@ -199,7 +197,6 @@ $(document).ready(function () {
     });
 
     $("#btn11e").on("click", function () {
-        eraseAnimation();
         calendarObj.slot11 = "";
         pushStorage();
         refreshAppointments();
@@ -214,7 +211,6 @@ $(document).ready(function () {
     });
 
     $("#btn12e").on("click", function () {
-        eraseAnimation();
         calendarObj.slot12 = "";
         pushStorage();
         refreshAppointments();
@@ -228,7 +224,6 @@ $(document).ready(function () {
     });
 
     $("#btn13e").on("click", function () {
-        eraseAnimation();
         calendarObj.slot13 = "";
         pushStorage();
         refreshAppointments();
@@ -243,7 +238,6 @@ $(document).ready(function () {
     });
 
     $("#btn14e").on("click", function () {
-        eraseAnimation();
         calendarObj.slot14 = "";
         saveAnimation();
         pushStorage();
@@ -260,7 +254,6 @@ $(document).ready(function () {
     });
 
     $("#btn15e").on("click", function () {
-        eraseAnimation();
         calendarObj.slot15 = "";
         pushStorage();
         refreshAppointments();
@@ -274,7 +267,6 @@ $(document).ready(function () {
     });
 
     $("#btn16e").on("click", function () {
-        eraseAnimation();
         calendarObj.slot16 = "";
         pushStorage();
         refreshAppointments();
@@ -288,7 +280,6 @@ $(document).ready(function () {
     });
 
     $("#btn17e").on("click", function () {
-        eraseAnimation();
         calendarObj.slot17 = "";
         pushStorage();
         refreshAppointments();
