@@ -1,9 +1,30 @@
+//defining the variable for animation end signal
+var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+//defining the variables for animations to be used
+var animationHeartBeat = "animated heartBeat";
+var animationFlip = "animated flip";
+
+//save button animation
+function saveAnimation() {
+    $('.saveBtn').addClass(animationHeartBeat).one(animationEnd, function () {
+        $(this).removeClass(animationHeartBeat);
+    });
+};
+
+//erase button animation
+function eraseAnimation() {
+    $('.eraseBtn').addClass(animationFlip).one(animationEnd, function () {
+        $(this).removeClass(animationFlip);
+    });
+};
+
+
 //putting the date on the page
 let dateToday = moment().format('LL');
 $("#currentDay").text(dateToday);
 
 //setting targets for slots
-
 let $appt9 = $("#slot9in");
 let $appt10 = $("#slot10in");
 let $appt11 = $("#slot11in");
@@ -17,8 +38,6 @@ let $appt17 = $("#slot17in");
 
 //getting the current hour for shading
 let currentHour = parseInt(moment().format('H'));
-
-
 
 switch (currentHour) {
     case 9:
@@ -141,79 +160,76 @@ function getStorage() {
 
 getStorage();
 
-calendarKeys = Object.keys(calendarObj);
-calendarKeys.forEach( function(key, index) {
-    console.log(index);
-    console.log(key);
-    console.log(calendarObj[key]);
-
-});
-
 
 //setting buttons to listen
 $(document).ready(function () {
     $("#btn9").on("click", function () {
         calendarObj.slot9 = $appt9.val();
+        saveAnimation();
         pushStorage();
         refreshAppointments();
     });
 
     $("#btn9e").on("click", function () {
+        eraseAnimation();
         calendarObj.slot9 = "";
-        console.log(calendarObj);
         pushStorage();
         refreshAppointments();
     });
 
     $("#btn10").on("click", function () {
         calendarObj.slot10 = $appt10.val();
+        saveAnimation();
         pushStorage();
         refreshAppointments();
     });
 
     $("#btn10e").on("click", function () {
+        eraseAnimation();
         calendarObj.slot10 = "";
-        console.log(calendarObj);
         pushStorage();
         refreshAppointments();
     });
 
     $("#btn11").on("click", function () {
         calendarObj.slot11 = $appt11.val();
+        saveAnimation();
         pushStorage();
         refreshAppointments();
     });
 
     $("#btn11e").on("click", function () {
+        eraseAnimation();
         calendarObj.slot11 = "";
-        console.log(calendarObj);
         pushStorage();
         refreshAppointments();
     });
 
     $("#btn12").on("click", function () {
         calendarObj.slot12 = $appt12.val();
+        saveAnimation();
         pushStorage();
         refreshAppointments();
 
     });
 
     $("#btn12e").on("click", function () {
+        eraseAnimation();
         calendarObj.slot12 = "";
-        console.log(calendarObj);
         pushStorage();
         refreshAppointments();
     });
 
     $("#btn13").on("click", function () {
         calendarObj.slot13 = $appt13.val();
+        saveAnimation();
         pushStorage();
         refreshAppointments();
     });
 
     $("#btn13e").on("click", function () {
+        eraseAnimation();
         calendarObj.slot13 = "";
-        console.log(calendarObj);
         pushStorage();
         refreshAppointments();
 
@@ -221,13 +237,15 @@ $(document).ready(function () {
     });
     $("#btn14").on("click", function () {
         calendarObj.slot14 = $appt14.val();
+        saveAnimation();
         pushStorage();
         refreshAppointments();
     });
 
     $("#btn14e").on("click", function () {
+        eraseAnimation();
         calendarObj.slot14 = "";
-        console.log(calendarObj);
+        saveAnimation();
         pushStorage();
         refreshAppointments();
     });
@@ -235,14 +253,15 @@ $(document).ready(function () {
 
     $("#btn15").on("click", function () {
         calendarObj.slot15 = $appt15.val();
+        saveAnimation();
         pushStorage();
         refreshAppointments();
 
     });
 
     $("#btn15e").on("click", function () {
+        eraseAnimation();
         calendarObj.slot15 = "";
-        console.log(calendarObj);
         pushStorage();
         refreshAppointments();
     });
@@ -255,8 +274,8 @@ $(document).ready(function () {
     });
 
     $("#btn16e").on("click", function () {
+        eraseAnimation();
         calendarObj.slot16 = "";
-        console.log(calendarObj);
         pushStorage();
         refreshAppointments();
     });
@@ -269,8 +288,8 @@ $(document).ready(function () {
     });
 
     $("#btn17e").on("click", function () {
+        eraseAnimation();
         calendarObj.slot17 = "";
-        console.log(calendarObj);
         pushStorage();
         refreshAppointments();
     });
@@ -280,7 +299,6 @@ $(document).ready(function () {
     }
 
     function refreshAppointments() {
-        console.log(calendarObj);
         $appt9.text(calendarObj.slot9);
         $appt10.text(calendarObj.slot10);
         $appt11.text(calendarObj.slot11);
